@@ -2,15 +2,16 @@
 
 import { useEffect, useRef, useState } from "react";
 
-// ─── Google Photos URLs ───────────────────────────────────────────────────────
-const PHOTO_1 = "https://lh3.googleusercontent.com/pw/AP1GczP44YMrB0z1yLr30TZ9SdBhv73vr2C6XNpjSltX5VulYgulnuEe6KNkOdaziEkfAwLIAOxjynaUs4inJeUZDESSC5u2O4_RFuWcC7r5_a_0qYvMFQrmwuCWKlP_TYRw_Zmjs6sKD-18kLOEOLZs-WUhhw=w1280-h851-s-no-gm?authuser=0";
-const PHOTO_2 = "https://lh3.googleusercontent.com/pw/AP1GczMb_h3eq4U15w9m8Lr_NEmhUz3EJNduSW6htED7W6iAn5G4SmSjB7VHTaMbkKfhRAesFDQ24bGQb-ggpMOKxAlVDoqFL1-vugo4G_f_f_ozFBXKvWcRppXCNPYBu4dGVNDUh1EZYwUndrP_v-HmyZmsFA=w578-h869-s-no-gm?authuser=0";
-const PHOTO_3 = "https://lh3.googleusercontent.com/pw/AP1GczNCoZQQ-q1xmQZPexfroUF0oEv578ifMGWgsDHHPqXfhjqGVZgAwIQE4G-TIiSSphyC-wYthfOODW4SWTPjcLHVPs5fi8EDIgL2JMvTxjO3kRNPVdlChU8oKxcOE7A5yJKxeZW14Ts7625EgRD4e6WJmA=w578-h869-s-no-gm?authuser=0";
-const PHOTO_4 = "https://lh3.googleusercontent.com/pw/AP1GczPmtLkKZsd7HZ_9bESPy6QKz4ks_Q16vA6YkJOxx539WmYEfcjguarYt_uNGbm1bVe_JBNBvonE_-CdmSXKj97pO_FqqDYja-WdwX71JD4YUeAoXgvjn5oE2M7fw1SlcJWdgnSRPiuTBM-hqqJ7NcHr3w=w578-h869-s-no-gm?authuser=0";
-const PHOTO_5 = "https://lh3.googleusercontent.com/pw/AP1GczMn3VqaNUeSpyck-pkjcYqQqX-da7vgQPhH6F6bf_LjIhMNeQiqTXF-TXodGlSCs_z8cLMuPI1GsjOOFPgdh7rBr7IwwpfmGVlxcDVcAiK-EDmdUja_rm6NZHxQBUL4sK7CveMBgLEVr1BxqRqKJwBw9A=w578-h869-s-no-gm?authuser=0";
-const PHOTO_6 = "https://lh3.googleusercontent.com/pw/AP1GczOnvuZGCy4m2oKkqW-ckGhN7BpefPdvJLeljoRzoX3gXnPGgZudYBFpQmmHxhOTTdqjpCQ33W6vX03WqosnOZkZsJiQQTwOq_3InvWrpseJo0u8cHviAqBdisn25KUDVO1XyFTnJlotwqb8dkuVLI5-3w=w578-h869-s-no-gm?authuser=0";
+// ─── Local Image Paths ────────────────────────────────────────────────────────
+const PHOTO_1 = "/images/photo1.jpg";
+const PHOTO_2 = "/images/photo2.jpg";
+const PHOTO_3 = "/images/photo3.jpg";
+const PHOTO_4 = "/images/photo4.jpg";
+const PHOTO_5 = "/images/photo5.jpg";
+const PHOTO_6 = "/images/photo6.jpg";
 
 const WEDDING_DATE = new Date("2024-05-13T12:30:00+05:30");
+const MUSIC_URL = "/music.mp3";
 
 // ─── Petal Canvas ─────────────────────────────────────────────────────────────
 function PetalCanvas() {
@@ -23,8 +24,9 @@ function PetalCanvas() {
     let animId: number;
 
     function resize() {
-      canvas!.width = window.innerWidth;
-      canvas!.height = window.innerHeight;
+      if (!canvas) return;
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
     }
     resize();
     window.addEventListener("resize", resize);
@@ -47,7 +49,10 @@ function PetalCanvas() {
         this.x += this.vx + Math.sin(this.y * 0.01) * 0.4;
         this.y += this.vy;
         this.rot += this.drot;
-        if (this.y > canvas!.height + 20) { Object.assign(this, new Petal()); this.y = -20; }
+        if (this.y > canvas!.height + 20) { 
+          this.x = Math.random() * canvas!.width;
+          this.y = -20; 
+        }
       }
       draw() {
         ctx.save();
@@ -104,16 +109,23 @@ function useCountdown(target: Date) {
 // ─── Scroll reveal hook ───────────────────────────────────────────────────────
 function useScrollReveal() {
   useEffect(() => {
-    function handle() {
+    const handleScroll = () => {
       document.querySelectorAll<HTMLElement>(".reveal").forEach(el => {
         if (el.getBoundingClientRect().top < window.innerHeight - 100) {
           el.classList.add("revealed");
         }
       });
-    }
-    window.addEventListener("scroll", handle, { passive: true });
-    handle();
-    return () => window.removeEventListener("scroll", handle);
+      
+      // Auto-unlock expanding photos/videos like the reference site
+      document.querySelectorAll<HTMLElement>(".event-photo-wrap").forEach(el => {
+        if (el.getBoundingClientRect().top < window.innerHeight - 150) {
+          el.classList.add("unlocked");
+        }
+      });
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 }
 
@@ -176,7 +188,7 @@ export default function Home() {
     <main>
       {/* ── Audio ── */}
       <audio ref={audioRef} loop preload="metadata">
-        <source src="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf584.mp3?filename=romantic-piano-112135.mp3" type="audio/mpeg" />
+        <source src={MUSIC_URL} type="audio/mpeg" />
       </audio>
 
       {/* ── Petals ── */}
