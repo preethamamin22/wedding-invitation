@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Aditya & Priya | Wedding Invitation",
+  title: "Sunil & Keerthana | Wedding Invitation",
   description: "With the blessings of God and elders, we sincerely request you to attend our wedding.",
 };
 

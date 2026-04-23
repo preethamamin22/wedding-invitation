@@ -245,14 +245,14 @@ export default function Home() {
               border: "3px solid rgba(232,192,122,0.5)",
               animation: "pulse 2.5s ease-in-out infinite",
             }}>
-              <span style={{ fontFamily: "'Great Vibes', cursive", fontSize: "2.2rem", color: "#2E1810", lineHeight: 1 }}>A & P</span>
+              <span style={{ fontFamily: "'Great Vibes', cursive", fontSize: "2.2rem", color: "#2E1810", lineHeight: 1 }}>S & K</span>
             </div>
 
             <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", color: "rgba(232,192,122,0.7)", fontSize: "1rem", marginBottom: "0.5rem" }}>
               With the blessings of God &amp; our elders
             </p>
             <h1 style={{ fontFamily: "'Great Vibes', cursive", fontSize: "clamp(2.5rem,10vw,4.5rem)", color: "#E8C07A", lineHeight: 1.1, marginBottom: "2rem" }}>
-              Aditya &amp; Priya
+              Sunil &amp; Keerthana
             </h1>
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.5rem" }}>
               <div style={{
@@ -304,8 +304,8 @@ export default function Home() {
             </p>
 
             <div className="couple-block">
-              <span className="couple-name shimmer-gold">Chiranjivi Aditya</span>
-              <p className="family-line">Son of Mr. &amp; Mrs. Groom&rsquo;s Family</p>
+              <span className="couple-name shimmer-gold">Chiranjivi Sunil</span>
+              <p className="family-line">Son of Mr. &amp; Mrs. Sunil&rsquo;s parents</p>
               <p className="family-subline">And all relatives &amp; well-wishers</p>
             </div>
 
@@ -316,8 +316,8 @@ export default function Home() {
             </div>
 
             <div className="couple-block">
-              <span className="couple-name shimmer-gold">Kumari Priya</span>
-              <p className="family-line">Daughter of Mr. &amp; Mrs. Bride&rsquo;s Family</p>
+              <span className="couple-name shimmer-gold">Kumari Keerthana</span>
+              <p className="family-line">Daughter of Mr. &amp; Mrs. Keerthana&rsquo;s parents</p>
               <p className="family-subline">And all relatives &amp; well-wishers</p>
             </div>
 
@@ -580,7 +580,7 @@ export default function Home() {
         <section id="footer-section">
           <div className="text-center reveal" style={{ marginBottom: "3rem" }}>
             <span style={{ fontFamily: "'Great Vibes',cursive", fontSize: "4rem", color: "var(--gold-light)", display: "block", lineHeight: 1.1 }}>
-              Aditya &amp; Priya
+              Sunil &amp; Keerthana
             </span>
             <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "1rem", marginTop: "1rem", opacity: 0.4 }}>
               <div style={{ height: 1, width: 60, background: "var(--gold-light)" }} />
