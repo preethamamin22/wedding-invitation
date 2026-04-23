@@ -9,19 +9,19 @@ const timelineEvents = [
     year: "March 2021",
     title: "How We Met",
     description: "It all started with a simple 'Hello' at a mutual friend's party. We talked for hours, oblivious to the world around us. That evening sparked a connection that would change our lives forever.",
-    image: "/images/photo3.jpg",
+    image: "https://lh3.googleusercontent.com/pw/AP1GczNCoZQQ-q1xmQZPexfroUF0oEv578ifMGWgsDHHPqXfhjqGVZgAwIQE4G-TIiSSphyC-wYthfOODW4SWTPjcLHVPs5fi8EDIgL2JMvTxjO3kRNPVdlChU8oKxcOE7A5yJKxeZW14Ts7625EgRD4e6WJmA=w578-h869-s-no-gm?authuser=0",
   },
   {
     year: "December 2023",
     title: "The Proposal",
     description: "Under a sky full of stars during our trip to the mountains, Aditya got down on one knee. With tears of joy and a heart full of love, Priya said 'Yes!'.",
-    image: "/images/photo4.jpg",
+    image: "https://lh3.googleusercontent.com/pw/AP1GczPmtLkKZsd7HZ_9bESPy6QKz4ks_Q16vA6YkJOxx539WmYEfcjguarYt_uNGbm1bVe_JBNBvonE_-CdmSXKj97pO_FqqDYja-WdwX71JD4YUeAoXgvjn5oE2M7fw1SlcJWdgnSRPiuTBM-hqqJ7NcHr3w=w578-h869-s-no-gm?authuser=0",
   },
   {
     year: "December 2026",
     title: "The Wedding",
     description: "We are thrilled to invite you to celebrate our love as we take our vows and start this beautiful new chapter together.",
-    image: "/images/photo5.jpg",
+    image: "https://lh3.googleusercontent.com/pw/AP1GczOnvuZGCy4m2oKkqW-ckGhN7BpefPdvJLeljoRzoX3gXnPGgZudYBFpQmmHxhOTTdqjpCQ33W6vX03WqosnOZkZsJiQQTwOq_3InvWrpseJo0u8cHviAqBdisn25KUDVO1XyFTnJlotwqb8dkuVLI5-3w=w578-h869-s-no-gm?authuser=0",
   }
 ];
 

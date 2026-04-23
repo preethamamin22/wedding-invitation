@@ -6,13 +6,12 @@ import Image from "next/image";
 import { X } from "lucide-react";
 
 const photos = [
-  "/images/photo1.jpg",
-  "/images/photo2.jpg",
-  "/images/photo3.jpg",
-  "/images/photo4.jpg",
-  "/images/photo5.jpg",
-  // Fallback beautiful scenery or just reuse photo1 for masonry balancing
-  "/images/photo1.jpg"
+  "https://lh3.googleusercontent.com/pw/AP1GczP44YMrB0z1yLr30TZ9SdBhv73vr2C6XNpjSltX5VulYgulnuEe6KNkOdaziEkfAwLIAOxjynaUs4inJeUZDESSC5u2O4_RFuWcC7r5_a_0qYvMFQrmwuCWKlP_TYRw_Zmjs6sKD-18kLOEOLZs-WUhhw=w1280-h851-s-no-gm?authuser=0",
+  "https://lh3.googleusercontent.com/pw/AP1GczMb_h3eq4U15w9m8Lr_NEmhUz3EJNduSW6htED7W6iAn5G4SmSjB7VHTaMbkKfhRAesFDQ24bGQb-ggpMOKxAlVDoqFL1-vugo4G_f_f_ozFBXKvWcRppXCNPYBu4dGVNDUh1EZYwUndrP_v-HmyZmsFA=w578-h869-s-no-gm?authuser=0",
+  "https://lh3.googleusercontent.com/pw/AP1GczNCoZQQ-q1xmQZPexfroUF0oEv578ifMGWgsDHHPqXfhjqGVZgAwIQE4G-TIiSSphyC-wYthfOODW4SWTPjcLHVPs5fi8EDIgL2JMvTxjO3kRNPVdlChU8oKxcOE7A5yJKxeZW14Ts7625EgRD4e6WJmA=w578-h869-s-no-gm?authuser=0",
+  "https://lh3.googleusercontent.com/pw/AP1GczPmtLkKZsd7HZ_9bESPy6QKz4ks_Q16vA6YkJOxx539WmYEfcjguarYt_uNGbm1bVe_JBNBvonE_-CdmSXKj97pO_FqqDYja-WdwX71JD4YUeAoXgvjn5oE2M7fw1SlcJWdgnSRPiuTBM-hqqJ7NcHr3w=w578-h869-s-no-gm?authuser=0",
+  "https://lh3.googleusercontent.com/pw/AP1GczMn3VqaNUeSpyck-pkjcYqQqX-da7vgQPhH6F6bf_LjIhMNeQiqTXF-TXodGlSCs_z8cLMuPI1GsjOOFPgdh7rBr7IwwpfmGVlxcDVcAiK-EDmdUja_rm6NZHxQBUL4sK7CveMBgLEVr1BxqRqKJwBw9A=w578-h869-s-no-gm?authuser=0",
+  "https://lh3.googleusercontent.com/pw/AP1GczOnvuZGCy4m2oKkqW-ckGhN7BpefPdvJLeljoRzoX3gXnPGgZudYBFpQmmHxhOTTdqjpCQ33W6vX03WqosnOZkZsJiQQTwOq_3InvWrpseJo0u8cHviAqBdisn25KUDVO1XyFTnJlotwqb8dkuVLI5-3w=w578-h869-s-no-gm?authuser=0"
 ];
 
 export default function Gallery() {

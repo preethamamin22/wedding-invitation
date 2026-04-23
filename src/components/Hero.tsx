@@ -51,7 +51,7 @@ export default function Hero() {
       <section className="relative w-full min-h-screen flex items-center justify-center py-20 px-4 md:px-8 bg-[#FCF9F2]">
         
         {/* Subtle floral pattern background */}
-        <div className="absolute inset-0 bg-[url('/images/photo1.jpg')] opacity-10 bg-cover bg-center pointer-events-none filter blur-sm grayscale" />
+        <div className="absolute inset-0 bg-[url('https://lh3.googleusercontent.com/pw/AP1GczP44YMrB0z1yLr30TZ9SdBhv73vr2C6XNpjSltX5VulYgulnuEe6KNkOdaziEkfAwLIAOxjynaUs4inJeUZDESSC5u2O4_RFuWcC7r5_a_0qYvMFQrmwuCWKlP_TYRw_Zmjs6sKD-18kLOEOLZs-WUhhw=w1280-h851-s-no-gm?authuser=0')] opacity-10 bg-cover bg-center pointer-events-none filter blur-sm grayscale" />
 
         {/* Falling Petals (CSS-based animation container) */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">

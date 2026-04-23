@@ -10,7 +10,7 @@ const events = [
     time: "Evening",
     venue: "Main Hall, Kalyana Mantapa",
     description: "Please join us for an evening of joyous celebrations, music, and the traditional haldi ceremony filled with blessings and laughter.",
-    image: "/images/photo1.jpg",
+    image: "https://lh3.googleusercontent.com/pw/AP1GczMb_h3eq4U15w9m8Lr_NEmhUz3EJNduSW6htED7W6iAn5G4SmSjB7VHTaMbkKfhRAesFDQ24bGQb-ggpMOKxAlVDoqFL1-vugo4G_f_f_ozFBXKvWcRppXCNPYBu4dGVNDUh1EZYwUndrP_v-HmyZmsFA=w578-h869-s-no-gm?authuser=0",
   },
   {
     title: "The Wedding (Muhurta)",
@@ -18,7 +18,7 @@ const events = [
     time: "Around 12:30 PM",
     venue: "Kalyana Mantapa",
     description: "The momentous occasion where we exchange vows and promise each other a lifetime of love under the blessings of our elders.",
-    image: "/images/photo2.jpg",
+    image: "https://lh3.googleusercontent.com/pw/AP1GczP44YMrB0z1yLr30TZ9SdBhv73vr2C6XNpjSltX5VulYgulnuEe6KNkOdaziEkfAwLIAOxjynaUs4inJeUZDESSC5u2O4_RFuWcC7r5_a_0qYvMFQrmwuCWKlP_TYRw_Zmjs6sKD-18kLOEOLZs-WUhhw=w1280-h851-s-no-gm?authuser=0",
   }
 ];
 
