@@ -9,19 +9,19 @@ const timelineEvents = [
     year: "March 2021",
     title: "How We Met",
     description: "It all started with a simple 'Hello' at a mutual friend's party. We talked for hours, oblivious to the world around us. That evening sparked a connection that would change our lives forever.",
-    image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop",
+    image: "/images/photo3.jpg",
   },
   {
     year: "December 2023",
     title: "The Proposal",
     description: "Under a sky full of stars during our trip to the mountains, Aditya got down on one knee. With tears of joy and a heart full of love, Priya said 'Yes!'.",
-    image: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=2070&auto=format&fit=crop",
+    image: "/images/photo4.jpg",
   },
   {
     year: "December 2026",
     title: "The Wedding",
     description: "We are thrilled to invite you to celebrate our love as we take our vows and start this beautiful new chapter together.",
-    image: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=2069&auto=format&fit=crop",
+    image: "/images/photo5.jpg",
   }
 ];
 

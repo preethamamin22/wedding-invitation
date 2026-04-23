@@ -6,12 +6,13 @@ import Image from "next/image";
 import { X } from "lucide-react";
 
 const photos = [
-  "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=2069&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1606800052052-a08af7148866?q=80&w=2070&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1583939000140-5232742d4bc3?q=80&w=1974&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1621683419957-c81bcbeb972f?q=80&w=2070&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=2070&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop"
+  "/images/photo1.jpg",
+  "/images/photo2.jpg",
+  "/images/photo3.jpg",
+  "/images/photo4.jpg",
+  "/images/photo5.jpg",
+  // Fallback beautiful scenery or just reuse photo1 for masonry balancing
+  "/images/photo1.jpg"
 ];
 
 export default function Gallery() {
