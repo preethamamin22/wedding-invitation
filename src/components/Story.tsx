@@ -40,9 +40,9 @@ export default function Story() {
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] as any }}
           className="text-center mb-32"
         >
-          <span className="font-sans uppercase tracking-[0.3em] text-[#A68F3A] text-xs font-semibold">Our Journey</span>
-          <h2 className="font-serif text-5xl md:text-6xl lg:text-7xl text-[#4A4A4A] mt-4 mb-6 tracking-tight">How It All Began</h2>
-          <div className="w-[1px] h-16 bg-[#D4AF37] mx-auto" />
+          <span className="font-sans uppercase tracking-[0.3em] text-[#8C7625] text-xs font-semibold">Our Journey</span>
+          <h2 className="font-serif text-5xl md:text-6xl lg:text-7xl text-[#5A1818] mt-4 mb-6 tracking-tight">How It All Began</h2>
+          <div className="w-[1px] h-16 bg-[#CFB53B] mx-auto" />
         </motion.div>
 
         <div className="flex flex-col space-y-32 md:space-y-48">
@@ -89,13 +89,13 @@ function StoryBlock({ event, index }: { event: any, index: number }) {
         }`}
       >
         <div className="flex items-center gap-4 mb-6">
-          <div className="w-8 h-[1px] bg-[#D4AF37]" />
-          <span className="font-sans text-xs uppercase tracking-[0.2em] text-[#A68F3A] font-semibold">{event.year}</span>
+          <div className="w-8 h-[1px] bg-[#CFB53B]" />
+          <span className="font-sans text-xs uppercase tracking-[0.2em] text-[#8C7625] font-semibold">{event.year}</span>
         </div>
-        <h3 className="font-serif text-4xl md:text-5xl text-[#4A4A4A] mb-6 tracking-tight leading-tight">
+        <h3 className="font-serif text-4xl md:text-5xl text-[#5A1818] mb-6 tracking-tight leading-tight">
           {event.title}
         </h3>
-        <p className="font-sans text-[#4A4A4A] text-base md:text-lg leading-relaxed font-light">
+        <p className="font-sans text-[#5A1818] text-base md:text-lg leading-relaxed font-light">
           {event.description}
         </p>
       </motion.div>

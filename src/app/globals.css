@@ -2,19 +2,22 @@
 
 @theme inline {
   --color-cream: #FCF9F2;
-  --color-gold: #D4AF37;
-  --color-gold-light: #E7C665;
-  --color-blush: #F9ECEC;
+  --color-gold: #CFB53B;
+  --color-gold-light: #E8D88E;
+  --color-burgundy: #5A1818;
+  --color-burgundy-dark: #3A0C0C;
+  --color-blush: #FAF2F2;
   --color-blush-dark: #E6D0D0;
   
   --font-sans: var(--font-lato), sans-serif;
   --font-serif: var(--font-playfair), serif;
+  --font-script: var(--font-script), cursive;
 }
 
 @layer base {
   body {
     background-color: var(--color-cream);
-    color: #4A4A4A;
+    color: var(--color-burgundy);
   }
 }
 

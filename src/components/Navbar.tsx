@@ -32,7 +32,7 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-6xl mx-auto px-4 flex justify-between items-center">
-        <a href="#" className={`font-serif text-2xl font-bold ${isScrolled ? "text-[#D4AF37]" : "text-white"}`}>
+        <a href="#" className={`font-serif text-2xl font-bold ${isScrolled ? "text-[#CFB53B]" : "text-white"}`}>
           A & P
         </a>
         
@@ -41,8 +41,8 @@ export default function Navbar() {
             <a
               key={item.name}
               href={item.href}
-              className={`font-sans text-sm uppercase tracking-widest hover:text-[#D4AF37] transition-colors ${
-                isScrolled ? "text-[#4A4A4A]" : "text-white/90"
+              className={`font-sans text-sm uppercase tracking-widest hover:text-[#CFB53B] transition-colors ${
+                isScrolled ? "text-[#5A1818]" : "text-white/90"
               }`}
             >
               {item.name}

@@ -55,8 +55,8 @@ export default function Countdown() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="font-serif text-4xl md:text-5xl text-[#4A4A4A] mb-4">Countdown to Forever</h2>
-          <div className="w-24 h-1 bg-[#D4AF37] mx-auto mb-16 rounded-full" />
+          <h2 className="font-serif text-4xl md:text-5xl text-[#5A1818] mb-4">Countdown to Forever</h2>
+          <div className="w-24 h-1 bg-[#CFB53B] mx-auto mb-16 rounded-full" />
         </motion.div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -68,8 +68,8 @@ export default function Countdown() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="flex flex-col items-center justify-center p-6 bg-[#FCF9F2] rounded-lg border border-[#E6D0D0] shadow-sm relative overflow-hidden"
             >
-              <div className="absolute top-0 left-0 w-full h-1 bg-[#D4AF37] opacity-50" />
-              <span className="font-serif text-5xl md:text-6xl text-[#D4AF37] mb-2 font-light">
+              <div className="absolute top-0 left-0 w-full h-1 bg-[#CFB53B] opacity-50" />
+              <span className="font-serif text-5xl md:text-6xl text-[#CFB53B] mb-2 font-light">
                 {String(block.value).padStart(2, "0")}
               </span>
               <span className="font-sans text-sm uppercase tracking-widest text-[#7A7A7A]">

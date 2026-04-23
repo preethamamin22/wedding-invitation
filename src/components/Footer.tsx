@@ -5,36 +5,52 @@ import { MessageCircle } from "lucide-react";
 export default function Footer() {
   const handleShare = () => {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent("You are invited to Aditya and Priya's Wedding Celebration! View details here: ");
-    window.open(`https://wa.me/?text=${text}${url}`, '_blank');
+    const text = encodeURIComponent("You are invited to Chiranjivi Aditya and Kumari Priya's Wedding Ceremony. Please join us!");
+    window.open(`https://wa.me/?text=${text} ${url}`, '_blank');
   };
 
   return (
-    <footer className="bg-white py-16 text-center border-t border-[#E6D0D0]">
-      <div className="max-w-4xl mx-auto px-4">
-        <div className="mb-12">
-          <div className="w-16 h-16 mx-auto mb-6 opacity-80">
-            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M50 0C50 27.6142 27.6142 50 0 50C27.6142 50 50 72.3858 50 100C50 72.3858 72.3858 50 100 50C72.3858 50 50 27.6142 50 0Z" fill="#D4AF37"/>
-            </svg>
+    <footer className="bg-white py-20 text-center border-t-4 border-[#CFB53B]/20 relative overflow-hidden">
+      {/* Decorative corners */}
+      <div className="absolute top-0 left-0 w-32 h-32 bg-[url('https://www.transparenttextures.com/patterns/floral-pattern.png')] opacity-10" />
+      <div className="absolute top-0 right-0 w-32 h-32 bg-[url('https://www.transparenttextures.com/patterns/floral-pattern.png')] opacity-10" />
+
+      <div className="max-w-4xl mx-auto px-4 relative z-10">
+        <div className="w-[1px] h-20 bg-gradient-to-b from-transparent to-[#CFB53B] mx-auto mb-10" />
+        
+        <h2 className="font-script text-5xl md:text-6xl text-[#5A1818] mb-8">With Best Compliments</h2>
+        
+        <div className="font-serif italic text-lg text-[#5A1818]/90 mb-12 max-w-2xl mx-auto leading-relaxed">
+          We eagerly await your presence to shower your blessings on the newly wedded couple.
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+          <div className="space-y-4">
+            <span className="font-sans uppercase tracking-[0.2em] text-[#CFB53B] text-xs font-bold block mb-4">Groom's Family</span>
+            <p className="font-sans text-[#5A1818] font-bold text-lg">Mr. & Mrs. Groom's Parents</p>
+            <p className="font-sans text-[#5A1818]/80 text-sm">And all relatives & friends</p>
           </div>
-          <h3 className="font-serif text-2xl text-[#4A4A4A] mb-4">With Best Compliments From</h3>
-          <p className="font-sans text-[#7A7A7A] mb-2 font-semibold">Mr. Sharma & Mrs. Sharma</p>
-          <p className="font-sans text-[#7A7A7A] mb-2 font-semibold">Mr. Verma & Mrs. Verma</p>
-          <p className="font-sans text-[#7A7A7A] italic mt-4">And All Family & Friends</p>
+          
+          <div className="space-y-4">
+            <span className="font-sans uppercase tracking-[0.2em] text-[#CFB53B] text-xs font-bold block mb-4">Bride's Family</span>
+            <p className="font-sans text-[#5A1818] font-bold text-lg">Mr. & Mrs. Bride's Parents</p>
+            <p className="font-sans text-[#5A1818]/80 text-sm">And all relatives & friends</p>
+          </div>
         </div>
 
         <button 
           onClick={handleShare}
-          className="inline-flex items-center px-6 py-3 bg-[#25D366] text-white rounded-full font-sans mb-12 hover:bg-[#128C7E] transition-colors shadow-md"
+          className="inline-flex items-center px-8 py-4 bg-[#CFB53B] text-white rounded-full font-sans text-sm tracking-[0.1em] uppercase mb-16 hover:bg-[#8C7625] transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1"
         >
-          <MessageCircle className="w-5 h-5 mr-2" />
-          Share on WhatsApp
+          <MessageCircle className="w-5 h-5 mr-3" />
+          Share Invitation
         </button>
 
-        <p className="font-serif text-3xl text-[#D4AF37] mb-2">Aditya & Priya</p>
-        <p className="font-sans text-sm text-[#7A7A7A] uppercase tracking-widest">
-          We look forward to celebrating with you
+        <div className="w-24 h-[1px] bg-[#CFB53B]/50 mx-auto mb-8" />
+        
+        <p className="font-script text-4xl text-[#CFB53B] mb-2">Aditya & Priya</p>
+        <p className="font-sans text-xs text-[#5A1818]/60 uppercase tracking-[0.3em]">
+          Thank you
         </p>
       </div>
     </footer>

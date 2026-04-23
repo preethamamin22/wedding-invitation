@@ -19,9 +19,9 @@ export default function Venue() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <span className="font-sans uppercase tracking-[0.2em] text-[#D4AF37] text-sm font-semibold">Location</span>
-          <h2 className="font-serif text-4xl md:text-5xl text-[#4A4A4A] mt-2 mb-4">Getting There</h2>
-          <div className="w-24 h-1 bg-[#D4AF37] mx-auto rounded-full" />
+          <span className="font-sans uppercase tracking-[0.2em] text-[#CFB53B] text-sm font-semibold">Location</span>
+          <h2 className="font-serif text-4xl md:text-5xl text-[#5A1818] mt-2 mb-4">Getting There</h2>
+          <div className="w-24 h-1 bg-[#CFB53B] mx-auto rounded-full" />
         </motion.div>
 
         <div className="flex flex-col lg:flex-row gap-12 items-center">
@@ -32,7 +32,7 @@ export default function Venue() {
             className="w-full lg:w-1/3 space-y-6"
           >
             <div className="bg-[#FCF9F2] p-8 rounded-2xl border border-[#E6D0D0] shadow-sm">
-              <h3 className="font-serif text-2xl text-[#4A4A4A] mb-4">Main Venue</h3>
+              <h3 className="font-serif text-2xl text-[#5A1818] mb-4">Main Venue</h3>
               <p className="font-sans text-[#7A7A7A] mb-6">
                 <strong>Palace Courtyard</strong><br />
                 123 Heritage Road,<br />
@@ -43,7 +43,7 @@ export default function Venue() {
                 href="https://maps.google.com" // Placeholder map link
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center justify-center w-full px-6 py-3 bg-[#D4AF37] text-white font-sans rounded-full hover:bg-[#E7C665] transition-colors shadow-md"
+                className="inline-flex items-center justify-center w-full px-6 py-3 bg-[#CFB53B] text-white font-sans rounded-full hover:bg-[#E7C665] transition-colors shadow-md"
               >
                 <Navigation className="w-4 h-4 mr-2" />
                 Get Directions
@@ -51,7 +51,7 @@ export default function Venue() {
             </div>
             
             <div className="bg-[#F9ECEC] p-8 rounded-2xl border border-[#E6D0D0] shadow-sm">
-              <h3 className="font-serif text-xl text-[#4A4A4A] mb-2">Accommodation</h3>
+              <h3 className="font-serif text-xl text-[#5A1818] mb-2">Accommodation</h3>
               <p className="font-sans text-[#7A7A7A] text-sm leading-relaxed">
                 Rooms have been reserved for our guests. Please let us know if you require accommodation during the RSVP process.
               </p>

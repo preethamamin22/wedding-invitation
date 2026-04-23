@@ -35,9 +35,9 @@ export default function Gallery() {
           transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] as any }}
           className="text-center mb-24"
         >
-          <span className="font-sans uppercase tracking-[0.3em] text-[#A68F3A] text-xs font-semibold">Memories</span>
-          <h2 className="font-serif text-5xl md:text-6xl text-[#4A4A4A] mt-4 mb-6 tracking-tight">Gallery</h2>
-          <div className="w-[1px] h-16 bg-[#D4AF37] mx-auto" />
+          <span className="font-sans uppercase tracking-[0.3em] text-[#8C7625] text-xs font-semibold">Memories</span>
+          <h2 className="font-serif text-5xl md:text-6xl text-[#5A1818] mt-4 mb-6 tracking-tight">Gallery</h2>
+          <div className="w-[1px] h-16 bg-[#CFB53B] mx-auto" />
         </motion.div>
 
         <motion.div style={{ y }} className="columns-1 sm:columns-2 lg:columns-3 gap-8 space-y-8">
