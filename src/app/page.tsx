@@ -304,7 +304,7 @@ export default function Home() {
             </p>
 
             <div className="couple-block">
-              <span className="couple-name shimmer-gold">Chiranjivi Sunil</span>
+              <span className="couple-name shimmer-gold">Sunil</span>
               <p className="family-line">Son of Mr. &amp; Mrs. Sunil&rsquo;s parents</p>
               <p className="family-subline">And all relatives &amp; well-wishers</p>
             </div>
@@ -316,7 +316,7 @@ export default function Home() {
             </div>
 
             <div className="couple-block">
-              <span className="couple-name shimmer-gold">Kumari Keerthana</span>
+              <span className="couple-name shimmer-gold">Keerthana</span>
               <p className="family-line">Daughter of Mr. &amp; Mrs. Keerthana&rsquo;s parents</p>
               <p className="family-subline">And all relatives &amp; well-wishers</p>
             </div>
