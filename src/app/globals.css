@@ -723,3 +723,53 @@ body {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.6; }
 }
+
+/* ============================================================
+   RESPONSIVE OVERRIDES
+   ============================================================ */
+@media (max-width: 600px) {
+  #hero {
+    padding: 2.5rem 0.75rem;
+  }
+  .hero-card {
+    padding: 2.5rem 1.25rem;
+    border-radius: 1.5rem;
+  }
+  .couple-name {
+    font-size: clamp(2.8rem, 12vw, 3.8rem);
+  }
+  .photo-grid {
+    columns: 1;
+    padding: 0 0.5rem;
+  }
+  .photo-grid-item {
+    margin-bottom: 0.75rem;
+  }
+  .section-heading {
+    font-size: clamp(2.5rem, 12vw, 3.5rem);
+  }
+  .countdown-grid {
+    gap: 0.25rem;
+  }
+  .countdown-number {
+    font-size: 2.2rem;
+  }
+  .event-title {
+    font-size: 2.2rem;
+  }
+  .venue-name {
+    font-size: 2.2rem;
+  }
+  .footer-heading {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-card {
+    padding: 2rem 1rem;
+  }
+  .ampersand {
+    font-size: 1.8rem;
+  }
+}
