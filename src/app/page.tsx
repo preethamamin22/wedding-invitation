@@ -10,8 +10,8 @@ const PHOTO_4 = "/images/photo4.jpg";
 const PHOTO_5 = "/images/photo5.jpg";
 const PHOTO_6 = "/images/photo6.jpg";
 
-const WEDDING_DATE = new Date("2024-05-13T12:30:00+05:30");
-const MUSIC_URL = "/music.mp3";
+const WEDDING_DATE = new Date("2026-05-10T08:50:00+05:30");
+const MUSIC_URL = "/music_audio.mpeg";
 
 // ─── Petal Canvas ─────────────────────────────────────────────────────────────
 function PetalCanvas() {
@@ -176,7 +176,11 @@ export default function Home() {
     setSubmitted(true);
   };
 
-  const photos = [PHOTO_1, PHOTO_2, PHOTO_3, PHOTO_4, PHOTO_5, PHOTO_6];
+  const photos = [
+    "https://lh3.googleusercontent.com/pw/AP1GczNtw6Vq-6BE14u6BlmfhIN1g-nVfFqYdUflCA-XYab2RFUcZb4rhNdTuIR1qWY86rtqph2uyKgS-b66SCOqY3qgP9q8yxhiVp_PaQAkRW8HmF29cwAxMoYLHDP2NkQWxX2Wgs4GJoPQa2x2XQ8RQvJk1Q=w571-h859-s-no-gm",
+    "https://lh3.googleusercontent.com/pw/AP1GczOs003-E8utclXygTlU4diRtrPVHU10AGzegrIvAQAH3EEvCt8E1memfyXm8Y8IQfFBeHxOncOXEqOPAHom3hI8IiVpenpxGs2GicWfkp1T9OsoOg-Kay-z47qE504rOkpgP_suI7KnwFdEYyd4xh295Q=w571-h859-s-no-gm",
+    "https://lh3.googleusercontent.com/pw/AP1GczOXcuPYAlmsCQL1DQAEBf--704o7_6lp_bAOESCePvXjq724ERJrhtlcPeFyo5TPH4te3_Jbvp0hsmsqioZ9cvOmIcB9xJr9mciRcrdZ8gmLLt94ShjpcZY3HCGhPugZYQBZ9vsRHIS8OQ8vHDY4oNb5A=w571-h859-s-no-gm"
+  ];
 
   const OrnamentStar = () => (
     <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24" style={{ color: "var(--gold)" }}>
@@ -252,7 +256,7 @@ export default function Home() {
               With the blessings of God &amp; our elders
             </p>
             <h1 style={{ fontFamily: "'Great Vibes', cursive", fontSize: "clamp(2.5rem,10vw,4.5rem)", color: "#E8C07A", lineHeight: 1.1, marginBottom: "2rem" }}>
-              Sunil &amp; Keerthana
+              Sunil Kumar KJ &amp; Keerthana NS
             </h1>
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.5rem" }}>
               <div style={{
@@ -299,13 +303,13 @@ export default function Home() {
             </p>
 
             <p className="blessings-text">
-              With the blessings of God &amp; our respected elders,<br />
+              With the blessings of our parents,<br />
               we joyfully request your gracious presence at the wedding of
             </p>
 
             <div className="couple-block">
-              <span className="couple-name shimmer-gold">Sunil</span>
-              <p className="family-line">Son of Mr. &amp; Mrs. Sunil&rsquo;s parents</p>
+              <span className="couple-name shimmer-gold">Sunil Kumar KJ</span>
+              <p className="family-line">Son of Mr. &amp; Mrs. Groom&rsquo;s parents</p>
               <p className="family-subline">And all relatives &amp; well-wishers</p>
             </div>
 
@@ -316,17 +320,17 @@ export default function Home() {
             </div>
 
             <div className="couple-block">
-              <span className="couple-name shimmer-gold">Keerthana</span>
-              <p className="family-line">Daughter of Mr. &amp; Mrs. Keerthana&rsquo;s parents</p>
+              <span className="couple-name shimmer-gold">Keerthana NS</span>
+              <p className="family-line">Daughter of Mr. &amp; Mrs. Bride&rsquo;s parents</p>
               <p className="family-subline">And all relatives &amp; well-wishers</p>
             </div>
 
             <div style={{ marginTop: "1.5rem", padding: "1rem 0 0", borderTop: "1px solid var(--border)", width: "100%" }}>
               <p style={{ fontFamily: "'Tenor Sans',sans-serif", fontSize: "0.7rem", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--terracotta)" }}>
-                Monday · 13th May 2024
+                Sunday · 10th May 2026
               </p>
               <p style={{ fontFamily: "'Cormorant Garamond',serif", fontStyle: "italic", color: "var(--text-mid)", fontSize: "0.95rem", marginTop: "0.3rem" }}>
-                Muhurta: Around 12:30 PM · Kalyana Mantapa
+                Muhurtham: 8:50 AM - 10:00 AM · Yashaswini Kalyana Mantapa
               </p>
             </div>
           </div>
@@ -346,7 +350,7 @@ export default function Home() {
             <p className="countdown-quote">
               &ldquo;The start of a beautiful journey, shared with those we love most&rdquo;
             </p>
-            <p className="countdown-date">Monday · 13th May 2024</p>
+            <p className="countdown-date">Sunday · 10th May 2026</p>
             <div className="countdown-grid">
               {[
                 { val: countdown.d, label: "Days" },
@@ -405,9 +409,9 @@ export default function Home() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img className="venue-img" src={PHOTO_4} alt="Kalyana Mantapa" />
             <div className="venue-info text-center">
-              <h3 className="venue-name">Kalyana Mantapa</h3>
+              <h3 className="venue-name">Yashaswini Kalyana Mantapa</h3>
               <p className="venue-address">
-                Wedding Venue, Karnataka<br />
+                Hemavathi badavane, KR Pet.<br />
                 Please contact family for exact address &amp; directions
               </p>
               <iframe
@@ -446,19 +450,19 @@ export default function Home() {
           {[
             {
               num: "Ceremony I",
-              title: "Haldi & Pre-Wedding",
-              date: "10-05-2024 (Friday)",
-              time: "Evening onwards",
-              venue: "Main Hall, Kalyana Mantapa",
-              photo: PHOTO_2,
+              title: "RECEPTION",
+              date: "09-05-2026 (Saturday)",
+              time: "7:30 PM",
+              venue: "Yashaswini Kalyana Mantapa",
+              photo: "https://lh3.googleusercontent.com/pw/AP1GczNtw6Vq-6BE14u6BlmfhIN1g-nVfFqYdUflCA-XYab2RFUcZb4rhNdTuIR1qWY86rtqph2uyKgS-b66SCOqY3qgP9q8yxhiVp_PaQAkRW8HmF29cwAxMoYLHDP2NkQWxX2Wgs4GJoPQa2x2XQ8RQvJk1Q=w571-h859-s-no-gm",
             },
             {
               num: "Ceremony II",
-              title: "Shubh Vivah",
-              date: "13-05-2024 (Monday)",
-              time: "Muhurta: ~12:30 PM",
-              venue: "Kalyana Mantapa",
-              photo: PHOTO_3,
+              title: "MUHURTHAM",
+              date: "10-05-2026 (Sunday)",
+              time: "8:50 AM - 10:00 AM",
+              venue: "Yashaswini Kalyana Mantapa",
+              photo: "https://lh3.googleusercontent.com/pw/AP1GczOs003-E8utclXygTlU4diRtrPVHU10AGzegrIvAQAH3EEvCt8E1memfyXm8Y8IQfFBeHxOncOXEqOPAHom3hI8IiVpenpxGs2GicWfkp1T9OsoOg-Kay-z47qE504rOkpgP_suI7KnwFdEYyd4xh295Q=w571-h859-s-no-gm",
             },
           ].map((ev, i) => (
             <div key={i}>
@@ -580,7 +584,7 @@ export default function Home() {
         <section id="footer-section">
           <div className="text-center reveal" style={{ marginBottom: "3rem" }}>
             <span style={{ fontFamily: "'Great Vibes',cursive", fontSize: "4rem", color: "var(--gold-light)", display: "block", lineHeight: 1.1 }}>
-              Sunil &amp; Keerthana
+              Sunil Kumar KJ &amp; Keerthana NS
             </span>
             <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "1rem", marginTop: "1rem", opacity: 0.4 }}>
               <div style={{ height: 1, width: 60, background: "var(--gold-light)" }} />
@@ -609,11 +613,16 @@ export default function Home() {
             <div className="footer-endnote reveal">
               <div style={{ opacity: 0.4, height: 1, width: 120, background: "var(--gold-light)", margin: "0 auto 2rem" }} />
               <p style={{ fontFamily: "'Cormorant Garamond',serif", fontStyle: "italic", fontSize: "0.95rem", color: "rgba(255,255,255,0.5)" }}>
-                13th May 2024 · Kalyana Mantapa, Karnataka
+                10th May 2026 · Yashaswini Kalyana Mantapa, KR Pet
               </p>
               <p style={{ fontFamily: "'Cormorant Garamond',serif", fontStyle: "italic", fontSize: "0.9rem", color: "rgba(255,255,255,0.35)", marginTop: "0.5rem" }}>
-                We sincerely request you and your family to attend and bless the couple.
+                With the blessings of our parents, we sincerely request your presence.
               </p>
+              <div style={{ marginTop: "3rem", borderTop: "1px solid rgba(255,255,255,0.1)", paddingTop: "1.5rem" }}>
+                <p style={{ fontFamily: "'Tenor Sans', sans-serif", fontSize: "0.6rem", letterSpacing: "0.2em", textTransform: "uppercase", color: "rgba(255,255,255,0.3)" }}>
+                  Created by <a href="https://preethamamin.vercel.app/?utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener noreferrer" style={{ color: "var(--gold-light)", textDecoration: "none" }}>Preetham B R</a>
+                </p>
+              </div>
             </div>
           </div>
         </section>
