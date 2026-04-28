@@ -34,14 +34,15 @@ body {
   color: var(--text-dark);
   font-family: 'Cormorant Garamond', Georgia, serif;
   overflow-x: hidden;
+  letter-spacing: 0.02em;
 }
 
 /* ============================================================
    TYPOGRAPHY
    ============================================================ */
-.script    { font-family: 'Great Vibes', cursive; }
+.script    { font-family: 'Great Vibes', cursive; letter-spacing: 0.05em; }
 .serif     { font-family: 'Cormorant Garamond', serif; }
-.sans      { font-family: 'Tenor Sans', sans-serif; }
+.sans      { font-family: 'Tenor Sans', sans-serif; letter-spacing: 0.25em; }
 
 /* Gold shimmer effect on heading text */
 .shimmer-gold {

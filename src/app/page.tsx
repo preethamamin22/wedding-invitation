@@ -179,7 +179,8 @@ export default function Home() {
   const photos = [
     "https://lh3.googleusercontent.com/pw/AP1GczNtw6Vq-6BE14u6BlmfhIN1g-nVfFqYdUflCA-XYab2RFUcZb4rhNdTuIR1qWY86rtqph2uyKgS-b66SCOqY3qgP9q8yxhiVp_PaQAkRW8HmF29cwAxMoYLHDP2NkQWxX2Wgs4GJoPQa2x2XQ8RQvJk1Q=w571-h859-s-no-gm",
     "https://lh3.googleusercontent.com/pw/AP1GczOs003-E8utclXygTlU4diRtrPVHU10AGzegrIvAQAH3EEvCt8E1memfyXm8Y8IQfFBeHxOncOXEqOPAHom3hI8IiVpenpxGs2GicWfkp1T9OsoOg-Kay-z47qE504rOkpgP_suI7KnwFdEYyd4xh295Q=w571-h859-s-no-gm",
-    "https://lh3.googleusercontent.com/pw/AP1GczOXcuPYAlmsCQL1DQAEBf--704o7_6lp_bAOESCePvXjq724ERJrhtlcPeFyo5TPH4te3_Jbvp0hsmsqioZ9cvOmIcB9xJr9mciRcrdZ8gmLLt94ShjpcZY3HCGhPugZYQBZ9vsRHIS8OQ8vHDY4oNb5A=w571-h859-s-no-gm"
+    "https://lh3.googleusercontent.com/pw/AP1GczOXcuPYAlmsCQL1DQAEBf--704o7_6lp_bAOESCePvXjq724ERJrhtlcPeFyo5TPH4te3_Jbvp0hsmsqioZ9cvOmIcB9xJr9mciRcrdZ8gmLLt94ShjpcZY3HCGhPugZYQBZ9vsRHIS8OQ8vHDY4oNb5A=w571-h859-s-no-gm",
+    "/photo4.png"
   ];
 
   const OrnamentStar = () => (
