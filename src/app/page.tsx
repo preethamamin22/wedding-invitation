@@ -220,7 +220,8 @@ export default function Home() {
           onClick={openInvitation}
           style={{
             position: "fixed", inset: 0, zIndex: 9999,
-            background: "linear-gradient(135deg, #2E1810 0%, #5C2233 50%, #2E1810 100%)",
+            background: "linear-gradient(rgba(46,24,16,0.8), rgba(92,34,51,0.8)), url('https://lh3.googleusercontent.com/pw/AP1GczNtw6Vq-6BE14u6BlmfhIN1g-nVfFqYdUflCA-XYab2RFUcZb4rhNdTuIR1qWY86rtqph2uyKgS-b66SCOqY3qgP9q8yxhiVp_PaQAkRW8HmF29cwAxMoYLHDP2NkQWxX2Wgs4GJoPQa2x2XQ8RQvJk1Q=w571-h859-s-no-gm')",
+            backgroundSize: "cover", backgroundPosition: "center",
             display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center",
             cursor: "pointer", userSelect: "none",
           }}
@@ -250,7 +251,7 @@ export default function Home() {
               border: "3px solid rgba(232,192,122,0.5)",
               animation: "pulse 2.5s ease-in-out infinite",
             }}>
-              <span style={{ fontFamily: "'Great Vibes', cursive", fontSize: "2.2rem", color: "#2E1810", lineHeight: 1 }}>S & K</span>
+              <span style={{ fontFamily: "'Great Vibes', cursive", fontSize: "2.2rem", color: "#2E1810", lineHeight: 1 }}>S 卐 K</span>
             </div>
 
             <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic", color: "rgba(232,192,122,0.7)", fontSize: "1rem", marginBottom: "0.5rem" }}>
@@ -297,7 +298,7 @@ export default function Home() {
             <div className="card-corner br" />
 
             {/* Ganesha */}
-            <div className="ganesh-icon" style={{ fontSize: "4rem", lineHeight: 1 }}>🕉️</div>
+            <div className="ganesh-icon" style={{ fontSize: "4rem", lineHeight: 1 }}>卐</div>
 
             <p style={{ fontFamily: "'Tenor Sans',sans-serif", fontSize: "0.62rem", letterSpacing: "0.3em", color: "var(--terracotta)", textTransform: "uppercase", marginBottom: "1.25rem" }}>
               ವಕ್ರತುಂಡ ಮಹಾಕಾಯ ಸೂರ್ಯಕೋಟಿ ಸಮಪ್ರಭ
